@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #left-side {
+            background-color: #003049;
+            height: 1000px;
+            position: fixed;
+        }
+
+        #left-side ul li {
+            background-color: #003049;
+            color: #fff;
+            margin: 30px 0px 0px 10px;
+
+        }
+
+        #right-side {
+            text-align: center;
+
+        }
+
+        #img1 {
+            border: #fefcf9 5px solid;
+            height: 250PX;
+            width: 250PX;
+            border-radius: 180px;
+            margin: 20px 0px 0px 10px;
+        }
+
+        .tab ul li {
+            margin: 25px;
+            background-color: #fafbfc;
+            box-shadow: 0px 0px 10px #393939;
+            border-radius: 5px;
+           
+         }
+
+        .tab-content p {
+            margin: 50px;
+            font-size: large;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .tab-content h1 {
+            background-color: #003049;
+            color: #fff;
+            border-radius: 50px 0px 50px 0px;
+            text-align: center;
+            font-family: fantasy;
+
+        }
+        #carousel-id{
+            width: 60%;
+            margin-left: 170px;
+            margin-top: 30px;
+
+
+        }
+        #probar{
+            width: 200px;
+            height:10px;
+            margin-left: 70px;
+        }
+        #experiance ul li{
+            box-shadow: none;
+            text-align: justify;
+            font-size: larger;
+            padding: 0px;
+            margin: 15px 70px 0px 70px;
+
+        }
+
+        @media only screen and (max-width:1000px) {
+            #left-side {
+                position: relative;
+                height: fit-content;
+
+            }
+            #carousel-id{
+                width: 100%;
+                margin: 0px;
+            }
+            #img1{
+              margin-left: 350px;
+            }
+ 
+
+        }
+        @media only screen and (max-width:600px){
+            #img1{
+              margin-left: 70px;
+            }
+            .tab ul li {
+                margin:0px;
+                font-size: smaller;                
+             }
+             .tab ul li a{
+                margin:4px;
+                padding: 0px;
+             }
+             .tab{
+                margin-top: 20px;
+             }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" id="left-side">
+
+        <img src="images/IMG-20240318-WA0063.jpg" class="img-responsive" alt="Image" id="img1">
+
+
+        <ul class="list-group">
+            <li class="list-group-item"><b> ABHIJEET MASKE</b></li>
+            <li class="list-group-item">
+                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                <b> abhijeetmaske609@gmail.com</b>
+            </li>
+            <li class="list-group-item">
+                <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                <b> 9130811810</b>
+            </li>
+            <li class="list-group-item">
+                <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+                <b> abhi_hk_18 </b>
+            </li>
+        </ul>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+
+    </div>
+
+    <div id="right-side" class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"
+            style="background-image: url(images/black2.jpg); color: #fff;">
+            <h1> A B H I</h1>
+            <h3>
+                - Web developer
+            </h3>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="content">
+            <div role="tabpanel" class="tab">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+
+                    <li role="presentation">
+                        <a href="#summary" aria-controls="summary" role="tab" data-toggle="tab">SUMMARY</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#education" aria-controls="education" role="tab" data-toggle="tab">EDUCATION</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#experiance" aria-controls="experiance" role="tab" data-toggle="tab">EXPERIANCE</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#skills" aria-controls="skills" role="tab" data-toggle="tab">SKILLS</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#certificate" aria-controls="certificate" role="tab" data-toggle="tab">CERTIFICATES</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+
+
+                    <div role="tabpanel" class="tab-pane active" id="summary">
+                        <h1>SUMMARY</h1>
+                        <P>Detail-oriented and motivated Bachelor of Computer Applications (BCA) graduate with a solid
+                            foundation in computer science principles and programming languages. Proficient in software
+                            development, database management, and system analysis. Adept at problem-solving and
+                            collaborating with teams to achieve project goals. Possesses excellent communication skills
+                            and a strong commitment to continuous learning and professional development. Eager to
+                            leverage academic knowledge and practical skills to contribute effectively to innovative IT
+                            projects in a dynamic work environment.
+                        </P>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="education">
+                        <h1>EDUCATION</h1>
+                        <p>
+                        <h2> Bachelor of Computer Applications (BCA)</h2>
+                        <hr>
+                        <h4> [Dr. Babasaheb Ambedker Marathawada Univercity],[ Chatrapati Sambhaji Nagar]</h4>
+                        <h3> [2024-25]</h3>
+                        <br>
+
+                        <big><b> Relevant Coursework:</b>
+                            <br>
+                            <ul>
+                                <li>Introduction to Programming</li>
+                                <li> Data Structures and Algorithms</li>
+                                <li> Database Management Systems</li>
+                                <li> Web Development</li>
+                                <li>Object-Oriented Programming</li>
+                                <li>Software Engineering</li>
+                                <li> Operating Systems</li>
+                                <li> Network Security</li>
+                            </ul>
+                        </big>
+                        </p>
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="experiance">
+                        <h1>EXPERIANCE</h1>
+                        <p>
+                        <h4><big><b><u>Software Development Intern</u></b></big>
+                            <br>
+                            [Company Name], [Location]
+                            <br>
+                            [Dates of Internship]
+                        </h4>
+                        <ul>
+                            <li>Assisted in the development and implementation of [specific project or task], gaining
+                                hands-on experience with [relevant technologies or programming languages].</li>
+                            <li> Collaborated with team members to troubleshoot and debug software issues, contributing
+                                to
+                                the overall success of [project or initiative].</li>
+                            <li> Participated in code reviews and provided constructive feedback to improve code quality
+                                and
+                                maintainability.</li>
+                            <li>Conducted research on emerging technologies and industry trends, presenting findings to
+                                the
+                                team to inform decision-making processes.</li>
+                            <li>Actively contributed to team meetings and brainstorming sessions, offering creative
+                                solutions to technical challenges.</li>
+                                <hr>
+                            </p>
+                                
+                            <p>
+                            <h4> <big> <b> <u>Web Development Project </u></b></big>
+                                <br>
+                                [Project Name],
+                                <br>
+                                [Your Role/Contribution],
+                                <br>
+                                [Dates]
+                            </h4>
+                            <ul>
+                                <li> Designed and developed a [describe the project: website, web application, etc.]
+                                    using
+                                    [specific technologies or frameworks].</li>
+                                <li>Implemented responsive design principles to ensure compatibility across various
+                                    devices and
+                                    screen sizes.</li>
+                                <li>Integrated [specific feature or functionality] to enhance user experience and
+                                    optimize
+                                    performance.</li>
+                                <li>Collaborated with peers to plan project milestones, allocate tasks, and meet
+                                    deadlines
+                                    effectively.</li>
+                                <li>Conducted testing and debugging to identify and resolve issues, ensuring a seamless
+                                    user
+                                    experience.</li>
+                            </ul>
+                            </p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="skills">
+                        <h1>SKILLS</h1>
+                        <b>
+                            <li>C++</li>
+                        </b>
+                        <div class="progress" id="probar">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow=""
+                                aria-valuemin="0%" aria-valuemax="100%" style="width: 110px;">
+                                <span style="padding-left: 20px;"></span>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <b>
+                            <li>python</li>
+                        </b>
+                        <div class="progress" id="probar">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow=""
+                                aria-valuemin="0%" aria-valuemax="100%" style="width: 140px;">
+                                <span style="padding-left: 20px;"></span>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <b>
+                            <li>HTML</li>
+                        </b>
+                        <div class="progress" id="probar">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow=""
+                                aria-valuemin="0%" aria-valuemax="100%" style="width: 120px;">
+                                <span style="padding-left: 20px;"></span>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <b>
+                            <li>DSA</li>
+                        </b>
+                        <div class="progress" id="probar">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow=""
+                                aria-valuemin="0%" aria-valuemax="100%" style="width: 90px;">
+                                <span style="padding-left: 20px;"></span>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <b>
+                            <li>RDBMS</li>
+                        </b>
+                        <div class="progress" id="probar">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow=""
+                                aria-valuemin="0%" aria-valuemax="100%" style="width: 80px;">
+                                <span style="padding-left: 20px;"></span>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="certificate">
+                        <h1>CERTIFICATES</h1>
+                        <div id="carousel-id" class="carousel slide" data-ride="carousel" >
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-id" data-slide-to="0" class=""></li>
+                                <li data-target="#carousel-id" data-slide-to="1" class=""></li>
+                                <li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item">
+                                    <img src="images/Python-Certificate-.png">
+                                    
+                                </div>
+                                <div class="item">
+                                    <img src="images/certificate4e.png">
+                                   
+                                </div>
+                                <div class="item active">
+                                    <img src="images/certificate3e.png">
+                                    
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                            <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                        </div>
+                        
+                       
+                        
+                    
+                </div>
+              
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    </div>
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
